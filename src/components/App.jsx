@@ -25,6 +25,15 @@ export class App extends Component {
     }));
   };
 
+  countTotalFeedback = () => 
+    this.state.good + this.state.neutral + this.state.bad;
+
+  countPositiveFeedbackPercentage = () =>
+    this.countTotalFeedback() !== 0
+      ? Math.round(this.state.good / this.countTotalFeedback() * 100)
+      : 0;
+    
+
   render() {
     const { good } = this.state;
     const { neutral } = this.state;
@@ -46,13 +55,15 @@ export class App extends Component {
       // }}
       >
         <h2>Please leave feedback</h2>
-        <button type="button" onClick={addFeedbackGood}>Good</button>
-        <button type="button" onClick={addFeedbackNeutral}>Neutral</button>
-        <button type="button" onClick={addFeedbackBad}>Bad</button>
+        <button type="button" onClick={ addFeedbackGood }>Good</button>
+        <button type="button" onClick={ addFeedbackNeutral }>Neutral</button>
+        <button type="button" onClick={ addFeedbackBad }>Bad</button>
         <h2>Statistics</h2>
-        <p>Good: {good}</p>
-        <p>Neutral: {neutral}</p>
-        <p>Bad: {bad}</p>
+        <p>Good: { good }</p>
+        <p>Neutral: { neutral }</p>
+        <p>Bad: { bad }</p>
+        <p>Total: { this.countTotalFeedback() }</p>
+        <p>Positive feedback: { this.countPositiveFeedbackPercentage() }%</p>
       </div>
     );
   }
