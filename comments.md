@@ -53,13 +53,18 @@ Step 2
 33. Added parameters to the <Section> component in the "App" component-class.
 
 Step 4 "Expanded functionality of the application"
-1. Add render the "Statistics" block by condition.
-2. Create a "notification" folder in the "components" folder.
-3. Create a Notification.jsx file in the "notification" folder.
-4. Create a "Notification" component in the Notification.jsx.
-5. Add a markup to the "Notification" component.
-6. Add "export default Notification;" to the Notification.jsx.
-7. Add props to the "Notification" component.
-8. Add import the "Notification" component to the Statistics.jsx.
-9. Add the <Notification> component to the "Statistics" component.
-10. Add parameters to the <Notification> component in the "Statistics" component.
+1. Added render the "Statistics" block by condition.
+2. Created a "notification" folder in the "components" folder.
+3. Created a Notification.jsx file in the "notification" folder.
+4. Created a "Notification" component in the Notification.jsx.
+5. Added a markup to the "Notification" component.
+6. Added "export default Notification;" to the Notification.jsx.
+7. Added props to the "Notification" component.
+8. Added import the "Notification" component to the Statistics.jsx.
+9. Added the <Notification> component to the "Statistics" component.
+10. Added parameters to the <Notification> component in the "Statistics" component.
+
+Commons
+1. Added PropTypes to the "Notification" component.
+2. Added PropTypes to the "Section" component.
+3. Added PropTypes to the "Statistics" component.

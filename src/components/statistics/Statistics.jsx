@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Notification from '../notification/Notification';
 
 const Statistics = ({
@@ -23,5 +25,13 @@ const Statistics = ({
             }
         </div>)
 };
+
+Statistics.propTypes = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    percentage: PropTypes.number.isRequired,
+}
 
 export default Statistics;
