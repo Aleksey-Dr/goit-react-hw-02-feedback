@@ -59,7 +59,7 @@ export class App extends Component {
       //   color: '#010101'
       // }}
       >
-        
+
         <Section text={ 'Please leave feedback' }>
           <FeedbackOptions
             addGood={ addFeedbackGood }
@@ -68,7 +68,7 @@ export class App extends Component {
           />
         </Section>
 
-        <Section text={ 'Statistics' }>
+        <Section text={'Statistics'}>
           <Statistics
             good={ good }
             neutral={ neutral }
