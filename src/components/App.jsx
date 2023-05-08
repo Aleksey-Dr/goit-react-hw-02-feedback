@@ -50,14 +50,15 @@ export class App extends Component {
 
     return (
       <div
-      // style={{
+      style={{
       //   height: '100vh',
       //   display: 'flex',
       //   justifyContent: 'center',
       //   alignItems: 'center',
       //   fontSize: 40,
       //   color: '#010101'
-      // }}
+        marginLeft: '24px',
+      }}
       >
 
         <Section text={ 'Please leave feedback' }>

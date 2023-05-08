@@ -1,7 +1,10 @@
 import PropTypes from 'prop-types';
+import clsx from 'clsx';
+
+import css from './Notification.module.css'
 
 const Notification = ({ notification }) => {
-    return (<p>{notification}</p>);
+    return (<p className={clsx(css.notification)}>{notification}</p>);
 };
 
 Notification.propTypes = {

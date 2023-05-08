@@ -68,3 +68,10 @@ Commons
 1. Added PropTypes to the "Notification" component.
 2. Added PropTypes to the "Section" component.
 3. Added PropTypes to the "Statistics" component.
+4. Added PropTypes to the "FeedbackOptions" component.
+
+CSS
+1. Created a Notification.module.css in the "notification" folder.
+2. Created a FeedbackOptions.module.css in the "feedbackOptions" folder.
+3. Added classNames to the "Notification" component.
+4. Added classNames to the "FeedbackOptions" component.
