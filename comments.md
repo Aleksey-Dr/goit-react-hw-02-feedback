@@ -75,3 +75,18 @@ CSS
 2. Created a FeedbackOptions.module.css in the "feedbackOptions" folder.
 3. Added classNames to the "Notification" component.
 4. Added classNames to the "FeedbackOptions" component.
+
+12.05.2023
+Fixed (feedback)
+1. Created an "onLeaveFeedback" method in the "App" component-class.
+2. Added argument to the "onLeaveFeedback" method.
+3. Sended the "onLeaveFeedback" method to props of the <FeedbackOptions> component.
+4. Changed props of the "FeedbackOptions" component to "options" - (array of "state" elements) and "onLeaveFeedback" - 
+   (method for count all feedbacks) props.
+5. Changed propTypes of the FeedbackOptions.
+6. Render the "Notification" component move to the "App" component-class.
+7. Add index.js files to the folders: "feedbackOptions", "notification", "section", "statistics".
+
+TOTAL:
+1. Unite all methods of count all feedbacks to an "onLeaveFeedback" method.
+2. Render the "Notification" component move to the "App" component-class.

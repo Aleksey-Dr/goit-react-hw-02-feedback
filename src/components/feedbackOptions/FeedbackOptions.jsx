@@ -3,30 +3,30 @@ import clsx from 'clsx';
 
 import css from './FeedbackOptions.module.css';
 
-const FeedbackOptions = ({
-    addGood,
-    addNeutral,
-    addBad,
-}) => {
-    return (
-        <div className={clsx(css["feedback-btns"])}>
-            <button type="button" onClick={addGood}>
-                Good
-            </button>
-            <button type="button" onClick={addNeutral}>
-                Neutral
-            </button>
-            <button type="button" onClick={addBad}>
-                Bad
-            </button>
-        </div>
-    )
+const FeedbackOptions = ({ onLeaveFeedback, options }) => {
+  return (
+    <div className={clsx(css['feedback-btns'])}>
+      {options.map(option => {
+        return (
+          <button
+            key={option}
+            type="button"
+            value={option}
+            onClick={() => onLeaveFeedback(option)}
+          >
+            {option}
+          </button>
+        );
+      })}
+    </div>
+  );
 };
 
 FeedbackOptions.propTypes = {
-    addGood: PropTypes.func.isRequired,
-    addNeutral: PropTypes.func.isRequired,
-    addBad: PropTypes.func.isRequired,
-}
+    onLeaveFeedback: PropTypes.func.isRequired,
+    options: PropTypes.arrayOf(
+        PropTypes.string.isRequired
+    ).isRequired,
+};
 
 export default FeedbackOptions;
